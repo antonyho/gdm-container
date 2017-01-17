@@ -17,4 +17,4 @@ RUN pip install -r requirements-1.txt
 RUN mkdir -p /root/data
 WORKDIR /root/data
 
-ENTRYPOINT ["python /root/gdm/gdm.py"]
+ENTRYPOINT ["python","/root/gdm/gdm.py"]
