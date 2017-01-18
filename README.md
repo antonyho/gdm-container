@@ -5,4 +5,4 @@ Build Docker Image:
 `docker build -t antonyho/gdm .`
 
 Execute the Docker Container:
-`docker build -v $PWD:/root/data antonyho/gdm accounts.csv all`
+`docker run --privileged=true -v $PWD:/root/data antonyho/gdm accounts.csv all`
